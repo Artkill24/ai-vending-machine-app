@@ -196,19 +196,16 @@ http://localhost:3000
 Add Arc Network Testnet:
 ```
 Network Name: Arc Testnet
-RPC URL: https://rpc-testnet.arc.xyz (or available endpoint)
-Chain ID: 7777
-Currency Symbol: ARC
+RPC URL: https://rpc.testnet.arc.network
+Chain ID: 5042002
+Currency Symbol: USDC
 Block Explorer: https://testnet.arcscan.app/
 ```
 
 Get testnet tokens:
-- **Arc tokens** (for gas): Use Arc faucet
-- **USDC testnet**: Transfer via Circle's CCTP or faucet
+- **USDC testnet**: Use Circle's faucet at https://faucet.circle.com
+- Note: Arc Testnet uses USDC as the native currency for gas fees
 
----
-
-## 📱 Usage
 
 ### 1. Connect Wallet
 Click "Connect Wallet" and select MetaMask. Switch to Arc Testnet if prompted.

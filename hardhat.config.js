@@ -13,12 +13,10 @@ module.exports = {
   },
   networks: {
     arcTestnet: {
-      url: "https://testnet.arcscan.app/", // New RPC from ArcScan
-      chainId: 7777,
+      url: "https://rpc.testnet.arc.network", // CORRETTO!
+      chainId: 5042002, // CORRETTO!
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
-      timeout: 60000, // 60 sec timeout
-      gasPrice: "auto",
+      timeout: 60000,
     }
-  },
-  defaultNetwork: "arcTestnet"
+  }
 };
