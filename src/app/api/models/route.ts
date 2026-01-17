@@ -1,39 +1,27 @@
-import { NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from '@google/generative-ai';
-
-const apiKey = process.env.GEMINI_API_KEY;
+kimport { NextResponse } from 'next/server';
 
 export async function GET() {
-  if (!apiKey) {
-    return NextResponse.json({
-      error: 'GEMINI_API_KEY not configured',
-      suggestion: 'Add your API key to .env.local',
-    }, { status: 500 });
-  }
+  // Hardcoded list of available models
+  const models = [
+    {
+      name: 'models/gemini-2.0-flash-lite',
+      displayName: 'Flash Lite',
+      description: 'Fast and efficient',
+      supportedGenerationMethods: ['generateContent']
+    },
+    {
+      name: 'models/gemini-2.0-flash-exp',
+      displayName: 'Flash 2.5',
+      description: 'Balanced performance',
+      supportedGenerationMethods: ['generateContent']
+    },
+    {
+      name: 'models/gemini-exp-1206',
+      displayName: 'Flash 3.0',
+      description: 'Most capable',
+      supportedGenerationMethods: ['generateContent']
+    }
+  ];
 
-  try {
-    const genAI = new GoogleGenerativeAI(apiKey);
-    const models = await genAI.listModels();
-    
-    const generativeModels = models.filter(m => 
-      m.supportedGenerationMethods?.includes('generateContent')
-    );
-
-    return NextResponse.json({
-      success: true,
-      count: generativeModels.length,
-      models: generativeModels.map(m => ({
-        name: m.name,
-        displayName: m.displayName,
-        description: m.description,
-      })),
-      timestamp: new Date().toISOString(),
-    });
-
-  } catch (error: any) {
-    return NextResponse.json({
-      error: error.message,
-      suggestion: 'Check your API key validity',
-    }, { status: 500 });
-  }
+  return NextResponse.json({ models });
 }
