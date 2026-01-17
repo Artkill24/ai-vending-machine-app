@@ -4,7 +4,7 @@
 
 A blockchain-powered AI platform where users pay with USDC stablecoin to get instant insights from Google's Gemini AI models. Built for the Agentic Commerce Hackathon 2026.
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://your-app.vercel.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://ai-vending-machine-app.vercel.app/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Built with Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 
@@ -268,6 +268,11 @@ npx hardhat run scripts/deploy-rewards.js --network arcTestnet
 npx hardhat verify --network arcTestnet DEPLOYED_CONTRACT_ADDRESS
 ```
 
+### Deployed Contract (Arc Testnet)
+
+**RewardsDistributor**: `0x84154dB9c74a227007bcCF01904f06b50ED5c069`
+
+View on explorer: [ArcScan](https://testnet.arcscan.app/address/0x84154dB9c74a227007bcCF01904f06b50ED5c069)
 ---
 
 ## 🔮 Roadmap
@@ -427,6 +432,6 @@ AI Vending Machine Oracle brings:
 
 **Built with ❤️ in 48 hours for Agentic Commerce Hackathon 2026**
 
-[Live Demo](https://your-app.vercel.app) • [Video](https://loom.com/share/your-video) • [GitHub](https://github.com/Artkill24/ai-vending-machine-app)
+[Live Demo](https://ai-vending-machine-app.vercel.app/) • [Video]() • [GitHub](https://github.com/Artkill24/ai-vending-machine-app)
 
 </div>
