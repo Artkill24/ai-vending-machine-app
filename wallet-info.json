@@ -1,0 +1,9 @@
+{
+  "walletSetId": "66ed4891-b183-55a2-92e7-1e73831a776f",
+  "walletId": "89485765-787a-53ec-b503-bd6f7c843a27",
+  "address": "0x4204fb1135416d5d845e4473a817ce14acad1078",
+  "blockchain": "ARC-TESTNET",
+  "entitySecret": "3abb674309ecc3ae7d5ed7f51cf08918a4ae3f720c8964854de39cd4fa3bccbb",
+  "apiKey": "TEST_API_KEY:ef1bdbc06861f0417c7faa28ca980b44:b90b63ff939dea1f28f57560677ac90b",
+  "createdAt": "2026-01-13T22:50:10.345Z"
+}
